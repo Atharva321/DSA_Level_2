@@ -16,6 +16,7 @@ public class Main {
         }
         
         HashMap<Integer, Integer> map = new HashMap<>();
+	    
         while(rem != 0){
             if(map.containsKey(rem) == false){
                 map.put(rem, sb.length());
@@ -24,7 +25,8 @@ public class Main {
                 quo = rem / den;
                 rem = rem % den;
                 sb.append(quo);
-            } else {
+            } 
+	    else {
                 int pos = map.get(rem);
                 sb.insert(pos, "(");
                 sb.append(")");
