@@ -10,6 +10,7 @@ public class Solution {
         
         hmap.put(0, -1);
         int i=0;
+        
         for(int num: nums){
             if(num == 0){
                 sum += -1;
@@ -31,6 +32,7 @@ public class Solution {
         }
         return ans;
     }
+    
     public static void main(String[] args) {
         Scanner scn = new Scanner(System.in);
         int n = scn.nextInt();
