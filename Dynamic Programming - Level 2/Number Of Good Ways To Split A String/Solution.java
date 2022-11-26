@@ -26,7 +26,7 @@ class Solution {
            suf[i] = count;
        }
 
-        int splits = 0;
+       int splits = 0;
 
        for(int i=0; i < n-1; i++){
            if(pre[i] == suf[i+1]){
